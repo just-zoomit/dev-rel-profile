@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, MessageSquare, Calendar, play } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, MessageSquare, Calendar, Play } from "lucide-react";
 
 const Contact = () => {
   const contactMethods = [
