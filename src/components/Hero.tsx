@@ -37,7 +37,7 @@ const Hero = () => {
                 View My Work
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10">
+              <Button variant="outline" size="lg" className="border-white/20 text-black hover:bg-white/10">
                 Get In Touch
                 <Mail className="ml-2 h-5 w-5" />
               </Button>
