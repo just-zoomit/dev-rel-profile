@@ -121,7 +121,6 @@ const WorkShowcase = () => {
                 </CardContent>
               </Card>
             ))}
-            <br />
           </div>
         </div>
 
