@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, ExternalLink , ChevronRight} from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
