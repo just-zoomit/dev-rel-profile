@@ -7,14 +7,14 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Developer workspace" 
+        <img
+          src={heroImage}
+          alt="Developer workspace"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-tech-dark/90 via-tech-dark/70 to-transparent"></div>
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -27,17 +27,24 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-white/90 leading-relaxed">
-                Empowering developers through education, creating engaging content, 
+                Empowering developers through education, creating engaging content,
                 and building bridges between technology and community.
               </p>
             </div>
-            
+
             <div className="flex flex-wrap gap-4">
-              <Button variant="hero" size="lg">
-                View My Work
+             
 
-                <a href="https://success.zoom.us/clips/share/play-list/60d74e5aa7b4432588161bef13c896be" className="ml-2 h-5 w-5" >  </a>
-
+              <Button asChild variant="hero" size="lg">
+                <a
+                  href="https://success.zoom.us/clips/share/play-list/60d74e5aa7b4432588161bef13c896be"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  View My Work
+                  <ChevronRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
 
               <Button variant="outline" size="lg" className="border-white/20 text-black hover:bg-white/10">
@@ -45,7 +52,7 @@ const Hero = () => {
                 <Mail className="ml-2 h-5 w-5" />
               </Button>
             </div>
-            
+
             {/* Social Links */}
             <div className="flex gap-6 pt-4">
               <a href="https://github.com/just-zoomit" className="text-white/70 hover:text-white transition-colors">
@@ -81,7 +88,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
