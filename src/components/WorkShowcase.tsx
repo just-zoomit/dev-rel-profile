@@ -42,7 +42,7 @@ const WorkShowcase = () => {
       url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
     },
     {
-      title: "Setup Zoom, Ngrok, and Supabase developer accounts and environments.",
+      title: "Setup Zoom, Ngrok, and Supabase developer environments.",
       description: "Step-by-step tutorial to create a fully functional chat application using WebSockets, Node.js, and React.",
       duration: "60 min",
       difficulty: "Advanced",
