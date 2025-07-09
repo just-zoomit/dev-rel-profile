@@ -5,7 +5,7 @@ import { Code, Users, BookOpen, Presentation } from "lucide-react";
 const About = () => {
   const skills = [
     "JavaScript", "TypeScript", "React", "Node.js", "Python", "Go",
-    "Docker", "Kubernetes", "AWS", "GCP", "Technical Writing", "Public Speaking"
+    "Docker", "AWS", "GCP", "Technical Writing", "Public Speaking"
   ];
 
   const expertise = [

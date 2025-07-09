@@ -8,29 +8,29 @@ const Contact = () => {
       icon: Mail,
       title: "Email",
       description: "For collaboration opportunities and general inquiries",
-      action: "hello@developer-advocate.com",
-      href: "mailto:hello@developer-advocate.com"
+      action: "donte.zoomie@gmail.com",
+      href: "mailto:donte.zoomie@gmail.com"
     },
     {
       icon: MessageSquare,
       title: "LinkedIn",
       description: "Connect with me for professional networking",
       action: "Connect on LinkedIn",
-      href: "#"
+      href: "https://www.linkedin.com/in/donte-small/"
     },
     {
       icon: Calendar,
       title: "Schedule a Call",
       description: "Book a time to discuss your project or questions",
       action: "Book a Meeting",
-      href: "#"
+      href: "https://scheduler.zoom.us/donte-small/meet-with-zoom-developer-advocate-donte"
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" }
+    { icon: Github, href: "https://github.com/just-zoomit", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/donte-small/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/zoomit_advocate", label: "Twitter" }
   ];
 
   return (

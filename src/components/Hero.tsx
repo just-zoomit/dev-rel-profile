@@ -45,18 +45,18 @@ const Hero = () => {
             
             {/* Social Links */}
             <div className="flex gap-6 pt-4">
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://github.com/just-zoomit" className="text-white/70 hover:text-white transition-colors">
                 <Github className="h-6 w-6" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/donte-small/" className="text-white/70 hover:text-white transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://x.com/zoomit_advocate" className="text-white/70 hover:text-white transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
             </div>
           </div>
-          
+
           {/* Stats or highlights */}
           <div className="grid grid-cols-2 gap-6 lg:gap-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-white">
