@@ -6,29 +6,29 @@ import { ExternalLink, Calendar, Clock } from "lucide-react";
 const WorkShowcase = () => {
   const blogPosts = [
     {
-      title: "Building Scalable Microservices with Kubernetes",
-      excerpt: "A comprehensive guide to deploying and managing microservices in production environments.",
+      title: "How to create a user and assign scheduling privilege programmatically",
+      excerpt: "A comprehensive guide to create a user and assign scheduling privilege programmatically.",
       date: "2024-01-15",
       readTime: "8 min read",
-      tags: ["Kubernetes", "DevOps", "Microservices"],
+      tags: ["Postman", "JavaScript", "Best Practices"],
       url: "https://developers.zoom.us/blog/create-a-user-assign-scheduling-privilege/"
 
     },
     {
-      title: "Modern React Patterns for Better Code Organization",
-      excerpt: "Explore advanced React patterns that will make your code more maintainable and scalable.",
+      title: "How to create a sample JWT for the Meeting SDKs",
+      excerpt: "A guide to create a sample JWT for the Meeting SDK.",
       date: "2024-01-08",
       readTime: "6 min read",
-      tags: ["React", "JavaScript", "Best Practices"],
-      url: "#"
+      tags: ["JWT", "JavaScript", "Best Practices"],
+      url: "https://developers.zoom.us/blog/create-sample-jwt-meeting-sdk/"
     },
     {
-      title: "Getting Started with Serverless Architecture",
-      excerpt: "Learn how to build and deploy serverless applications using AWS Lambda and other cloud services.",
+      title: "Preparing your Meeting SDK app for review",
+      excerpt: "A guide to create a sample JWT for the Meeting SDK.",
       date: "2023-12-20",
-      readTime: "10 min read",
-      tags: ["Serverless", "AWS", "Cloud"],
-      url: "#"
+      readTime: "4 min read",
+      tags: ["JWT", "JavaScript", "Best Practices"],
+      url: "https://developers.zoom.us/blog/prepare-meeting-sdk-app-for-review/"
     }
   ];
 
