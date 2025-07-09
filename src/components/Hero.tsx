@@ -52,13 +52,13 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex gap-6 pt-4">
-              <a href="https://github.com/just-zoomit" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://github.com/just-zoomit" target="_blank" className="text-white/70 hover:text-white transition-colors">
                 <Github className="h-6 w-6" />
               </a>
-              <a href="https://www.linkedin.com/in/donte-small/" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/donte-small/" target="_blank" className="text-white/70 hover:text-white transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="https://x.com/zoomit_advocate" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://x.com/zoomit_advocate" target="_blank" className="text-white/70 hover:text-white transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
             </div>
