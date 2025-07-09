@@ -41,13 +41,14 @@ const WorkShowcase = () => {
       technologies: ["Zoom Marketplace", "Node.js", "Postman"],
       url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
     },
+    ,
     {
-      title: "How to setup Zoom, Ngrok, and Supabase developer accounts and environments",
-      description: "Step-by-step tutorial to setup Zoom, Ngrok, and Supabase developer accounts and environments.",
+      title: "How to setup Zoom, Ngrok, and Supabase developer accounts and development environment.",
+      description: "Step-by-step tutorial to create a fully functional chat application using WebSockets, Node.js, and React.",
       duration: "45 min",
       difficulty: "Intermediate",
       technologies: ["WebSockets", "Node.js", "React"],
-      url: "https://just-zoomit.github.io/zoomapp-taskmanager-codelab/#0"
+      url: "#"
     },
     {
       title: "Build a Real-time Chat App with WebSockets",
@@ -168,16 +169,9 @@ const WorkShowcase = () => {
                         </Badge>
                       ))}
                     </div>
-                    <Button asChild variant="outline" className="w-full">
-                      <a
-                        href={codelab.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center"
-                      >
-                        Start Codelab
-                        <ExternalLink className="ml-2 h-5 w-5" />
-                      </a>
+                    <Button variant="default" className="w-full">
+                      Start Codelab
+                      <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
                   </div>
                 </CardContent>
