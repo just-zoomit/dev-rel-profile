@@ -42,20 +42,20 @@ const WorkShowcase = () => {
       url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
     },
     {
-      title: "Deploy ML Models with Docker & Kubernetes",
-      description: "Learn to containerize and deploy machine learning models in a scalable Kubernetes cluster.",
+      title: "How to setup Zoom, Ngrok, and Supabase developer accounts and development environment.",
+      description: "Step-by-step tutorial to create a fully functional chat application using WebSockets, Node.js, and React.",
       duration: "60 min",
       difficulty: "Advanced",
-      technologies: ["Docker", "Kubernetes", "Python", "ML"],
-      url: "#"
+      technologies: ["WebSockets", "Node.js", "React"],
+      url: "https://just-zoomit.github.io/zoomapp-taskmanager-codelab/#0"
     },
     {
-      title: "Create a REST API with Express & MongoDB",
-      description: "Build a complete RESTful API with authentication, data validation, and database integration.",
+      title: "Install and authorize multi-feature Zoom app integration",
+      description: "Build a completely integrated Zoom app  with Supabase authentication, Zoom Team Chat, and Zoom Team Chat Chatbot.",
       duration: "30 min",
-      difficulty: "Beginner",
+      difficulty: "Advanced",
       technologies: ["Express", "MongoDB", "Node.js"],
-      url: "#"
+      url: "https://just-zoomit.github.io/how-to-install-and-authorize-zoom-app-sdk-with-supabase/#0"
     }
   ];
 
