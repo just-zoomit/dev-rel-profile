@@ -76,6 +76,8 @@ const Contact = () => {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary/10 hover:bg-primary/20 p-4 rounded-full transition-colors group"
                 aria-label={social.label}
               >
