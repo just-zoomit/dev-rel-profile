@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Let's Connect</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            I'm always excited to connect with fellow developers, discuss new technologies, 
+            I'm always excited to connect with fellow developers, discuss new technologies,
             or collaborate on interesting projects. Feel free to reach out!
           </p>
         </div>
@@ -92,10 +92,13 @@ const Contact = () => {
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
             Get notified when I publish new blog posts, codelabs, and developer resources.
           </p>
-          <Button variant="hero" size="lg">
-            Subscribe to Newsletter
+          <Button variant="hero" size="lg" asChild>
+            <a href="https://donte.hashnode.dev/newsletter" target="_blank" rel="noopener noreferrer">
+              Subscribe to Newsletter
+            </a>
           </Button>
         </div>
+
       </div>
     </section>
   );
