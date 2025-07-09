@@ -11,12 +11,13 @@ const WorkShowcase = () => {
       date: "2024-01-15",
       readTime: "8 min read",
       tags: ["Kubernetes", "DevOps", "Microservices"],
-      url: "#"
+      url: "https://developers.zoom.us/blog/create-a-user-assign-scheduling-privilege/"
+
     },
     {
       title: "Modern React Patterns for Better Code Organization",
       excerpt: "Explore advanced React patterns that will make your code more maintainable and scalable.",
-      date: "2024-01-08", 
+      date: "2024-01-08",
       readTime: "6 min read",
       tags: ["React", "JavaScript", "Best Practices"],
       url: "#"
@@ -25,7 +26,7 @@ const WorkShowcase = () => {
       title: "Getting Started with Serverless Architecture",
       excerpt: "Learn how to build and deploy serverless applications using AWS Lambda and other cloud services.",
       date: "2023-12-20",
-      readTime: "10 min read", 
+      readTime: "10 min read",
       tags: ["Serverless", "AWS", "Cloud"],
       url: "#"
     }
@@ -41,7 +42,7 @@ const WorkShowcase = () => {
       url: "#"
     },
     {
-      title: "Deploy ML Models with Docker & Kubernetes", 
+      title: "Deploy ML Models with Docker & Kubernetes",
       description: "Learn to containerize and deploy machine learning models in a scalable Kubernetes cluster.",
       duration: "60 min",
       difficulty: "Advanced",
@@ -51,7 +52,7 @@ const WorkShowcase = () => {
     {
       title: "Create a REST API with Express & MongoDB",
       description: "Build a complete RESTful API with authentication, data validation, and database integration.",
-      duration: "30 min", 
+      duration: "30 min",
       difficulty: "Beginner",
       technologies: ["Express", "MongoDB", "Node.js"],
       url: "#"
@@ -73,7 +74,7 @@ const WorkShowcase = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Featured Work</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore my latest blog posts and interactive codelabs designed to help developers 
+            Explore my latest blog posts and interactive codelabs designed to help developers
             learn new technologies and improve their skills.
           </p>
         </div>
@@ -105,15 +106,22 @@ const WorkShowcase = () => {
                         </Badge>
                       ))}
                     </div>
-                    <Button variant="outline" className="w-full">
-                      Read More
-                      <ExternalLink className="ml-2 h-4 w-4" />
+                    <Button asChild variant="outline" className="w-full">
+                      <a
+                        href={post.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center"
+                      >
+                        Read More
+                        <ExternalLink className="ml-2 h-5 w-5" />
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
               </Card>
             ))}
-            <br/>
+            <br />
           </div>
         </div>
 
@@ -152,14 +160,14 @@ const WorkShowcase = () => {
                 </CardContent>
               </Card>
             ))}
-              <br/>
+            <br />
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="text-center mt-16">
           <h3 className="text-3xl font-semibold mb-8 text-center"> Want to see more of my work?</h3>
-         
+
           <div className="flex flex-wrap gap-4 justify-center">
             <Button variant="default" size="lg">
               View All Blog Posts
