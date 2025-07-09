@@ -41,7 +41,6 @@ const WorkShowcase = () => {
       technologies: ["Zoom Marketplace", "Node.js", "Postman"],
       url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
     },
-    ,
     {
       title: "How to setup Zoom, Ngrok, and Supabase developer accounts and environments",
       description: "Step-by-step tutorial to setup Zoom, Ngrok, and Supabase developer accounts and environments.",
@@ -169,9 +168,9 @@ const WorkShowcase = () => {
                         </Badge>
                       ))}
                     </div>
-                    <Button variant="default" className="w-full">
+                    <Button asChild variant="outline" className="w-full">
                       <a
-                        href={post.url}
+                        href={codelab.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center"
