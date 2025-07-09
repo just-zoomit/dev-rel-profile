@@ -152,10 +152,24 @@ const WorkShowcase = () => {
                         </Badge>
                       ))}
                     </div>
-                    <Button variant="default" className="w-full">
-                      Start Codelab
-                      <ExternalLink className="ml-2 h-4 w-4" />
+
+
+                    
+
+
+                    <Button asChild variant="default" className="w-full">
+                      <a
+                        href={codelab.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center"
+                      >
+                        Start Codelab
+                        <ExternalLink className="ml-2 h-5 w-5" />
+                      </a>
                     </Button>
+
+
                   </div>
                 </CardContent>
               </Card>
