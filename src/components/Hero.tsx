@@ -35,8 +35,11 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg">
                 View My Work
-                <ExternalLink className="ml-2 h-5 w-5" />
+
+                <a href="https://success.zoom.us/clips/share/play-list/60d74e5aa7b4432588161bef13c896be" className="ml-2 h-5 w-5" >  </a>
+
               </Button>
+
               <Button variant="outline" size="lg" className="border-white/20 text-black hover:bg-white/10">
                 Get In Touch
                 <Mail className="ml-2 h-5 w-5" />
