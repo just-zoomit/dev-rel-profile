@@ -6,7 +6,7 @@ import { ExternalLink, Calendar, Clock } from "lucide-react";
 const WorkShowcase = () => {
   const blogPosts = [
     {
-      title: "How to create a user and assign scheduling privilege programmatically",
+      title: "Programmatically create a user and assign scheduling privilege",
       excerpt: "A comprehensive guide to create a user and assign scheduling privilege programmatically.",
       date: "2024-01-15",
       readTime: "8 min read",
