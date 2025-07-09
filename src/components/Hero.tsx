@@ -37,6 +37,7 @@ const Hero = () => {
               <Button asChild variant="hero" size="lg">
                 <a
                   href="https://success.zoom.us/clips/share/play-list/60d74e5aa7b4432588161bef13c896be"
+                  
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
