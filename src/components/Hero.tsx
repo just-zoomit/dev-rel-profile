@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, ExternalLink , ChevronRight} from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, ExternalLink } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
@@ -33,7 +33,6 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-             
 
               <Button asChild variant="hero" size="lg">
                 <a
@@ -43,7 +42,7 @@ const Hero = () => {
                   className="flex items-center"
                 >
                   View My Work
-                  <ChevronRight className="ml-2 h-5 w-5" />
+                  <ExternalLink className="ml-2 h-5 w-5" />
                 </a>
               </Button>
 
