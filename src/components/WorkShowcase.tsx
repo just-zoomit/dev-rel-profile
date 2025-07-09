@@ -113,6 +113,7 @@ const WorkShowcase = () => {
                 </CardContent>
               </Card>
             ))}
+            <br/>
           </div>
         </div>
 
@@ -151,14 +152,14 @@ const WorkShowcase = () => {
                 </CardContent>
               </Card>
             ))}
+              <br/>
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <p className="text-lg text-muted-foreground mb-6">
-            Want to see more of my work?
-          </p>
+          <h3 className="text-3xl font-semibold mb-8 text-center"> Want to see more of my work?</h3>
+         
           <div className="flex flex-wrap gap-4 justify-center">
             <Button variant="default" size="lg">
               View All Blog Posts
