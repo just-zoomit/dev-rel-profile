@@ -31,7 +31,7 @@ const Contact = () => {
     { icon: Github, href: "https://github.com/just-zoomit", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/donte-small/", label: "LinkedIn" },
     { icon: Twitter, href: "https://x.com/zoomit_advocate", label: "Twitter" },
-    { icon: play, href: "https://success.zoom.us/clips/share/play-list/60d74e5aa7b4432588161bef13c896be", label: "Zoom Clips" }
+    { icon: play, href: "https://success.zoom.us/clips/share/play-list/60d74e5aa7b4432588161bef13c896be", label: "ZoomClips" }
   ];
 
   return (
