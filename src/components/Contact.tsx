@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, MessageSquare, Calendar, Play } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, MessageSquare, Calendar, Play, Youtube } from "lucide-react";
 
 const Contact = () => {
   const contactMethods = [
@@ -31,6 +31,7 @@ const Contact = () => {
     { icon: Github, href: "https://github.com/just-zoomit", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/donte-small/", label: "LinkedIn" },
     { icon: Twitter, href: "https://x.com/zoomit_advocate", label: "Twitter" },
+    { icon: Youtube, href: "https://www.youtube.com/@donte-ai/playlists", label: "ZoomClips" },
     { icon: Play, href: "https://success.zoom.us/clips/share/play-list/60d74e5aa7b4432588161bef13c896be", label: "ZoomClips" }
   ];
 
