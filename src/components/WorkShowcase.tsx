@@ -39,7 +39,7 @@ const WorkShowcase = () => {
       duration: "45 min",
       difficulty: "Intermediate",
       technologies: ["WebSockets", "Node.js", "React"],
-      url: "#"
+      url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
     },
     {
       title: "Deploy ML Models with Docker & Kubernetes",
