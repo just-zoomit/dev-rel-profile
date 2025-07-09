@@ -43,7 +43,7 @@ const WorkShowcase = () => {
     },
     {
       title: "Setup Zoom, Ngrok, and Supabase developer environments.",
-      description: "Step-by-step tutorial to create a fully functional chat application using WebSockets, Node.js, and React.",
+      description: "Create a chat application using Zoom WebSockets, Node.js, and React.",
       duration: "60 min",
       difficulty: "Advanced",
       technologies: ["WebSockets", "Node.js", "React"],
