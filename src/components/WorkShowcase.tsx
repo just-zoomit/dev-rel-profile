@@ -154,9 +154,6 @@ const WorkShowcase = () => {
                     </div>
 
 
-                    
-
-
                     <Button asChild variant="default" className="w-full">
                       <a
                         href={codelab.url}
@@ -168,8 +165,6 @@ const WorkShowcase = () => {
                         <ExternalLink className="ml-2 h-5 w-5" />
                       </a>
                     </Button>
-
-
                   </div>
                 </CardContent>
               </Card>
@@ -180,6 +175,7 @@ const WorkShowcase = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
+           <br />
           <h3 className="text-3xl font-semibold mb-8 text-center"> Want to see more of my work?</h3>
 
           <div className="flex flex-wrap gap-4 justify-center">
