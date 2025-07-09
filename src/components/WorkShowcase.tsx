@@ -34,11 +34,11 @@ const WorkShowcase = () => {
 
   const codelabs = [
     {
-      title: "Build a Real-time Chat App with WebSockets",
-      description: "Step-by-step tutorial to create a fully functional chat application using WebSockets, Node.js, and React.",
-      duration: "45 min",
+      title: "Create a multi-feature Zoom app with a manifest file",
+      description: "Step-by-step tutorial to create a multi-feature Zoom app with a manifest file.",
+      duration: "15 min",
       difficulty: "Intermediate",
-      technologies: ["WebSockets", "Node.js", "React"],
+      technologies: ["Zoom Marketplace", "Node.js", "Postman"],
       url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
     },
     {
