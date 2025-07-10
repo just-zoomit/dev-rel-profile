@@ -17,70 +17,32 @@ const BlogPosts = () => {
   const postsPerPage = 6;
 
   // Extended blog posts data for demonstration
+  
   const allBlogPosts = [
     {
-      title: "Building Scalable Microservices with Kubernetes",
-      excerpt: "A comprehensive guide to deploying and managing microservices in production environments.",
+      title: "Programmatically create a user and assign scheduling privilege",
+      excerpt: "A comprehensive guide to create a user and assign scheduling privilege programmatically.",
       date: "2024-01-15",
       readTime: "8 min read",
-      tags: ["Kubernetes", "DevOps", "Microservices"],
-      url: "#"
+      tags: ["Postman", "JavaScript", "Best Practices"],
+      url: "https://developers.zoom.us/blog/create-a-user-assign-scheduling-privilege/"
+
     },
     {
-      title: "Modern React Patterns for Better Code Organization",
-      excerpt: "Explore advanced React patterns that will make your code more maintainable and scalable.",
-      date: "2024-01-08", 
+      title: "How to create a sample JWT for the Meeting SDKs",
+      excerpt: "A guide to create a sample JWT for the Meeting SDK.",
+      date: "2024-01-08",
       readTime: "6 min read",
-      tags: ["React", "JavaScript", "Best Practices"],
-      url: "#"
+      tags: ["JWT", "JavaScript", "Best Practices"],
+      url: "https://developers.zoom.us/blog/create-sample-jwt-meeting-sdk/"
     },
     {
-      title: "Getting Started with Serverless Architecture",
-      excerpt: "Learn how to build and deploy serverless applications using AWS Lambda and other cloud services.",
+      title: "Preparing your Meeting SDK app for review",
+      excerpt: "A guide to create a sample JWT for the Meeting SDK.",
       date: "2023-12-20",
-      readTime: "10 min read", 
-      tags: ["Serverless", "AWS", "Cloud"],
-      url: "#"
-    },
-    {
-      title: "Advanced Docker Techniques for Development",
-      excerpt: "Master Docker containers with advanced techniques for better development workflows.",
-      date: "2023-12-15",
-      readTime: "7 min read",
-      tags: ["Docker", "DevOps", "Containers"],
-      url: "#"
-    },
-    {
-      title: "GraphQL vs REST: A Complete Comparison",
-      excerpt: "Deep dive into the differences between GraphQL and REST APIs with practical examples.",
-      date: "2023-12-10",
-      readTime: "9 min read",
-      tags: ["GraphQL", "REST", "API"],
-      url: "#"
-    },
-    {
-      title: "Building Progressive Web Apps with React",
-      excerpt: "Create fast, reliable, and engaging web applications using modern PWA techniques.",
-      date: "2023-12-05",
-      readTime: "12 min read",
-      tags: ["PWA", "React", "Web Development"],
-      url: "#"
-    },
-    {
-      title: "Machine Learning in JavaScript",
-      excerpt: "Explore how to implement machine learning models directly in the browser with JavaScript.",
-      date: "2023-11-28",
-      readTime: "11 min read",
-      tags: ["Machine Learning", "JavaScript", "TensorFlow.js"],
-      url: "#"
-    },
-    {
-      title: "Building Real-time Applications with WebSockets",
-      excerpt: "Learn to create responsive real-time applications using WebSocket technology.",
-      date: "2023-11-20",
-      readTime: "8 min read",
-      tags: ["WebSockets", "Real-time", "Node.js"],
-      url: "#"
+      readTime: "4 min read",
+      tags: ["JWT", "JavaScript", "Best Practices"],
+      url: "https://developers.zoom.us/blog/prepare-meeting-sdk-app-for-review/"
     }
   ];
 
@@ -132,6 +94,7 @@ const BlogPosts = () => {
             </Card>
           ))}
         </div>
+        <br/>
 
         {totalPages > 1 && (
           <Pagination>

@@ -17,70 +17,31 @@ const Codelabs = () => {
   const codelabsPerPage = 6;
 
   // Extended codelabs data for demonstration
+  
   const allCodelabs = [
     {
-      title: "Build a Real-time Chat App with WebSockets",
-      description: "Step-by-step tutorial to create a fully functional chat application using WebSockets, Node.js, and React.",
-      duration: "45 min",
+      title: "Create a multi-feature Zoom app with a manifest file",
+      description: "Step-by-step tutorial to create a multi-feature Zoom app with a manifest file.",
+      duration: "15 min",
       difficulty: "Intermediate",
-      technologies: ["WebSockets", "Node.js", "React"],
-      url: "#"
+      technologies: ["Zoom Marketplace", "Node.js", "Postman"],
+      url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
     },
     {
-      title: "Deploy ML Models with Docker & Kubernetes", 
-      description: "Learn to containerize and deploy machine learning models in a scalable Kubernetes cluster.",
+      title: "Setup Zoom, Ngrok, and Supabase developer environments.",
+      description: "Create a chat application using Zoom WebSockets, Node.js, and React.",
       duration: "60 min",
       difficulty: "Advanced",
-      technologies: ["Docker", "Kubernetes", "Python", "ML"],
-      url: "#"
+      technologies: ["WebSockets", "Node.js", "React"],
+      url: "https://just-zoomit.github.io/zoomapp-taskmanager-codelab/#0"
     },
     {
-      title: "Create a REST API with Express & MongoDB",
-      description: "Build a complete RESTful API with authentication, data validation, and database integration.",
-      duration: "30 min", 
-      difficulty: "Beginner",
+      title: "Install and authorize multi-feature Zoom app integration",
+      description: "Build a completely integrated Zoom app  with Supabase authentication, Zoom Team Chat, and Zoom Team Chat Chatbot.",
+      duration: "30 min",
+      difficulty: "Advanced",
       technologies: ["Express", "MongoDB", "Node.js"],
-      url: "#"
-    },
-    {
-      title: "Build a Progressive Web App",
-      description: "Create a PWA with offline capabilities, push notifications, and app-like experience.",
-      duration: "50 min",
-      difficulty: "Intermediate",
-      technologies: ["PWA", "Service Workers", "React"],
-      url: "#"
-    },
-    {
-      title: "Serverless Functions with Vercel",
-      description: "Deploy and manage serverless functions using Vercel's platform with real-world examples.",
-      duration: "35 min",
-      difficulty: "Beginner",
-      technologies: ["Vercel", "Serverless", "JavaScript"],
-      url: "#"
-    },
-    {
-      title: "GraphQL API with Apollo Server",
-      description: "Build a modern GraphQL API with Apollo Server, including subscriptions and real-time updates.",
-      duration: "55 min",
-      difficulty: "Advanced",
-      technologies: ["GraphQL", "Apollo", "Node.js"],
-      url: "#"
-    },
-    {
-      title: "React Native Mobile App",
-      description: "Create a cross-platform mobile application using React Native with navigation and state management.",
-      duration: "70 min",
-      difficulty: "Intermediate",
-      technologies: ["React Native", "Navigation", "Redux"],
-      url: "#"
-    },
-    {
-      title: "Microservices with Docker Compose",
-      description: "Architecture and deploy a microservices application using Docker Compose and inter-service communication.",
-      duration: "65 min",
-      difficulty: "Advanced",
-      technologies: ["Docker", "Microservices", "API Gateway"],
-      url: "#"
+      url: "https://just-zoomit.github.io/how-to-install-and-authorize-zoom-app-sdk-with-supabase/#0"
     }
   ];
 
@@ -141,6 +102,7 @@ const Codelabs = () => {
             </Card>
           ))}
         </div>
+        <br/>
 
         {totalPages > 1 && (
           <Pagination>
