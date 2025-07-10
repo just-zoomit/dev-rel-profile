@@ -20,28 +20,12 @@ const Codelabs = () => {
   
   const allCodelabs = [
     {
-      title: "Create a multi-feature Zoom app with a manifest file",
-      description: "Step-by-step tutorial to create a multi-feature Zoom app with a manifest file.",
+      title: "Building a Task Manager for the Zoom Workplace Platform - Codelab Series",
+      description: "11-part series on building a Task Manager Zoom Workplace sample app..",
       duration: "15 min",
       difficulty: "Intermediate",
       technologies: ["Zoom Marketplace", "Node.js", "Postman"],
       url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
-    },
-    {
-      title: "Setup Zoom, Ngrok, and Supabase developer environments.",
-      description: "Create a chat application using Zoom WebSockets, Node.js, and React.",
-      duration: "60 min",
-      difficulty: "Advanced",
-      technologies: ["WebSockets", "Node.js", "React"],
-      url: "https://just-zoomit.github.io/zoomapp-taskmanager-codelab/#0"
-    },
-    {
-      title: "Install and authorize multi-feature Zoom app integration",
-      description: "Build a completely integrated Zoom app  with Supabase authentication, Zoom Team Chat, and Zoom Team Chat Chatbot.",
-      duration: "30 min",
-      difficulty: "Advanced",
-      technologies: ["Express", "MongoDB", "Node.js"],
-      url: "https://just-zoomit.github.io/how-to-install-and-authorize-zoom-app-sdk-with-supabase/#0"
     }
   ];
 
