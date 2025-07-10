@@ -127,8 +127,7 @@ const BlogPosts = () => {
           ))}
           <br/>
         </div>
-       
-        <div>
+        <br/>
 
         {totalPages > 1 && (
           <Pagination>
@@ -170,8 +169,7 @@ const BlogPosts = () => {
             </PaginationContent>
           </Pagination>
         )}
-        </div>
-
+        
       </div>
     </div>
   );
