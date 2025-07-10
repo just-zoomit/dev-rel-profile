@@ -105,7 +105,7 @@ const BlogPosts = () => {
                 </div>
                 <CardTitle className="text-xl leading-tight">{post.title}</CardTitle>
               </CardHeader>
-              <CardContent className="flex flex-col h-full">
+              <CardContent className="flex flex-col flex-1 min-h-0">
                 <p className="text-muted-foreground mb-4 flex-grow">
                   {post.excerpt}
                 </p>
