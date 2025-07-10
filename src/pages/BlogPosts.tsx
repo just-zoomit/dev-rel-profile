@@ -125,7 +125,7 @@ const BlogPosts = () => {
               </CardContent>
             </Card>
           ))}
-       
+          <br/>
         </div>
        
         <div>
