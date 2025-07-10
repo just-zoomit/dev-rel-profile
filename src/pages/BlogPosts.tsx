@@ -94,7 +94,7 @@ const BlogPosts = () => {
             </Card>
           ))}
         </div>
-        <hr/>
+    
 
         {totalPages > 1 && (
           <Pagination>
