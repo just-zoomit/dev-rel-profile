@@ -81,7 +81,7 @@ const Codelabs = () => {
                 </div>
                 <CardTitle className="text-xl leading-tight">{codelab.title}</CardTitle>
               </CardHeader>
-              <CardContent className="flex flex-col h-full">
+              <CardContent className="flex flex-col flex-1 min-h-0">
                 <p className="text-muted-foreground mb-4 flex-grow">
                   {codelab.description}
                 </p>
