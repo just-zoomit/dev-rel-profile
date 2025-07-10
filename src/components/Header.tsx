@@ -17,7 +17,7 @@ const Header = () => {
     <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 border-b">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <Link to="/" className="font-bold text-xl">
+          <Link to="/" className="font-bold text-xl hidden md:block">
             Developer Advocate
           </Link>
           

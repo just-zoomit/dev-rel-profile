@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, ExternalLink, Youtube } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
@@ -60,6 +60,9 @@ const Hero = () => {
               </a>
               <a href="https://x.com/zoomit_advocate"  className="text-white/70 hover:text-white transition-colors">
                 <Twitter className="h-6 w-6" />
+              </a>
+              <a href="https://www.youtube.com/@donte-ai/playlists"  className="text-white/70 hover:text-white transition-colors">
+                <Youtube className="h-6 w-6" />
               </a>
             </div>
           </div>

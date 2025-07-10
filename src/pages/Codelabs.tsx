@@ -21,7 +21,7 @@ const Codelabs = () => {
   const allCodelabs = [
     {
       title: "Building a Task Manager for the Zoom Workplace Platform - Codelab Series",
-      description: "11-part series on building a Task Manager Zoom Workplace sample app.",
+      description: "11-part series on building a Task Manager Zoom Workplace app.",
       duration: "15 min",
       difficulty: "Intermediate",
       technologies: ["Zoom Marketplace", "Node.js", "Postman"],
