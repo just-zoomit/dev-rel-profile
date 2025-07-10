@@ -118,8 +118,15 @@ const BlogPosts = () => {
                     ))}
                   </div>
                   <Button variant="outline" className="w-full">
-                    Read More
-                    <ExternalLink className="ml-2 h-4 w-4" />
+                    <a
+                        href={post.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center"
+                      >
+                        Read More
+                        <ExternalLink className="ml-2 h-5 w-5" />
+                      </a>
                   </Button>
                 </div>
               </CardContent>
