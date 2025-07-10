@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -179,12 +180,16 @@ const WorkShowcase = () => {
 
           <div className="flex flex-wrap gap-4 justify-center">
             <Button variant="default" size="lg">
-              View All Blog Posts
-              <ExternalLink className="ml-2 h-5 w-5" />
+              <Link to="/blog">
+                View All Blog Posts
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button variant="accent" size="lg">
-              Browse All Codelabs
-              <ExternalLink className="ml-2 h-5 w-5" />
+               <Link to="/codelabs">
+                Browse All Codelabs
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
           </div>
         </div>
