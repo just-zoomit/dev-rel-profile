@@ -12,7 +12,7 @@ const WorkShowcase = () => {
   const blogPosts = [
     {
       title: "Programmatically create a user and assign scheduling privilege",
-      excerpt: "A comprehensive guide to create a user and assign scheduling privilege programmatically.",
+      excerpt: "A guide to create a user and assign scheduling privilege programmatically.",
       date: "2024-01-15",
       readTime: "8 min read",
       tags: ["Postman", "JavaScript", "Best Practices"],
