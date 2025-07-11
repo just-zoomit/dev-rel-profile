@@ -4,7 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Calendar, Clock } from "lucide-react";
 
+import { blogs } from "@/lib/content/blogs/blogs";
+import { codelabs as labs } from "@/lib/content/codelabs/codelabs";
+
 const WorkShowcase = () => {
+  
   const blogPosts = [
     {
       title: "Programmatically create a user and assign scheduling privilege",
@@ -33,32 +37,7 @@ const WorkShowcase = () => {
     }
   ];
 
-  const codelabs = [
-    {
-      title: "Create a multi-feature Zoom app with a manifest file",
-      description: "Step-by-step tutorial to create a multi-feature Zoom app with a manifest file.",
-      duration: "15 min",
-      difficulty: "Intermediate",
-      technologies: ["Zoom Marketplace", "Node.js", "Postman"],
-      url: "https://just-zoomit.github.io/multi-feature-zoom-manifest-file/#0"
-    },
-    {
-      title: "Setup Zoom, Ngrok, and Supabase developer environments.",
-      description: "Create a chat application using Zoom WebSockets, Node.js, and React.",
-      duration: "60 min",
-      difficulty: "Advanced",
-      technologies: ["WebSockets", "Node.js", "React"],
-      url: "https://just-zoomit.github.io/zoomapp-taskmanager-codelab/#0"
-    },
-    {
-      title: "Install and authorize multi-feature Zoom app integration",
-      description: "Build a completely integrated Zoom app  with Supabase authentication, Zoom Team Chat, and Zoom Team Chat Chatbot.",
-      duration: "30 min",
-      difficulty: "Advanced",
-      technologies: ["Express", "MongoDB", "Node.js"],
-      url: "https://just-zoomit.github.io/how-to-install-and-authorize-zoom-app-sdk-with-supabase/#0"
-    }
-  ];
+  const codelabs = labs
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
