@@ -18,8 +18,6 @@ import { codelabs } from "@/lib/content/codelabs/codelabs";
 const Codelabs = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const codelabsPerPage = 6;
-
-  // Extended codelabs data for demonstration
   
   const allCodelabs = codelabs
 
