@@ -28,7 +28,7 @@ export const codelabs: Codelab[] = [
   },
   {
     title: "Enable Zoom App Real Time Media Streams: Media-accessing apps",
-    description: "Build a Zoom app with Supabase authentication, Zoom Team Chat, and Zoom Team Chat Chatbot.",
+    description: "Create a Zoom app integrating Supabase auth with Team Chat and Chatbot functionality.",
     duration: "30 min",
     difficulty: "Intermediate",
     technologies: ["Express", "MongoDB", "Node.js"],
