@@ -20,7 +20,7 @@ export const codelabs: Codelab[] = [
   },
   {
     title: "Embed the Zoom meeting and webinar experience: Web Meeting SDK",
-    description: "Create a chat application using Zoom WebSockets, Node.js, and React.",
+    description: "Create a video conferencing application using Zoom Meeting SDK and Next.js.",
     duration: "10 min",
     difficulty: "Beginner",
     technologies: ["Typescript", "Node.js", "React"],
