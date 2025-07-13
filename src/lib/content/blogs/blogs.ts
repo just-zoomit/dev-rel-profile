@@ -21,7 +21,7 @@ export const blogs: Blogs[] = [
     },
     {
       title: "How to create a sample JWT for the Meeting SDKs",
-      excerpt: "A guide to create a sample JWT for the Meeting SDK.",
+      excerpt: "A guide to manually create a JWT token for the Meeting SDK.",
       date: "2024-01-08",
       readTime: "6 min read",
       tags: ["JWT", "JavaScript", "Best Practices"],
