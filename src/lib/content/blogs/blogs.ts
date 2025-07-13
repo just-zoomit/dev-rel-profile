@@ -12,7 +12,7 @@ export interface Blogs {
 export const blogs: Blogs[] = [
     {
       title: "Programmatically create a user and assign scheduling privilege",
-      excerpt: "A comprehensive guide to create a user and assign scheduling privilege programmatically.",
+      excerpt: "Step-by-step guide to create a user and assign scheduling privilege programmatically.",
       date: "2024-01-15",
       readTime: "8 min read",
       tags: ["Postman", "JavaScript", "Best Practices"],
