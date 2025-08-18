@@ -44,16 +44,21 @@ const Hero = () => {
                   <ExternalLink className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="border-white/20 text-black hover:bg-white/10">
-              <a
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-white/20 text-black hover:bg-white/10"
+              >
+                <a
                   href="https://devforum.zoom.us/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
-                    > 
-                
-                Join the Community
-                <Users className="ml-2 h-5 w-5" />
+                >
+                  Join the Community
+                  <Users className="ml-2 h-5 w-5" />
+                </a>
               </Button>
             </div>
 
@@ -65,10 +70,10 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/donte-small/" target="_blank" className="text-white/70 hover:text-white transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="https://x.com/zoomit_advocate"  className="text-white/70 hover:text-white transition-colors">
+              <a href="https://x.com/zoomit_advocate" className="text-white/70 hover:text-white transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="https://www.youtube.com/@donte-ai/playlists"  className="text-white/70 hover:text-white transition-colors">
+              <a href="https://www.youtube.com/@donte-ai/playlists" className="text-white/70 hover:text-white transition-colors">
                 <Youtube className="h-6 w-6" />
               </a>
             </div>
