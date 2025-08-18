@@ -11,7 +11,7 @@ const Header = () => {
     { path: "/", label: "Home", icon: Home },
     { path: "/blog", label: "Blog Posts", icon: FileText },
     { path: "/codelabs", label: "Codelabs", icon: Code2 },
-    { path: "/ai", label: "Projects", icon:  Bot }
+    // { path: "/ai", label: "Projects", icon:  Bot }
   ];
 
   return (
