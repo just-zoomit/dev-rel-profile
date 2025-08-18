@@ -43,10 +43,10 @@ export const codelabs: Codelab[] = [
     url: "https://just-zoomit.github.io/zcc-get-started-codelab/#0",
   },
   {
-    title: "Getting started with Zoom Apps SDK codelab",
+    title: "Getting started with Zoom Apps SDK",
     description: "Create a Zoom app.",
     duration: "30 min",
-    difficulty: "Intermediate",
+     difficulty: "Beginner",
     technologies: [ "Next.JS", "TailwindCSS","ShadCN",],
     url: "https://just-zoomit.github.io/get-started-with-zoomapps-sdk/#0",
   },
