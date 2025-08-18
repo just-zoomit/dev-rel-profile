@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, ExternalLink, Youtube } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, ExternalLink, Youtube, Users } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
@@ -45,8 +45,8 @@ const Hero = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="border-white/20 text-black hover:bg-white/10">
-                Get In Touch
-                <Mail className="ml-2 h-5 w-5" />
+                Join the Community
+                <Users className="ml-2 h-5 w-5" />
               </Button>
             </div>
 
