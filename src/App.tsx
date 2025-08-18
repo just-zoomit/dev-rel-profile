@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Index from "./pages/Index";
 import BlogPosts from "./pages/BlogPosts";
 import Codelabs from "./pages/Codelabs";
+import AIEngineer from "./pages/AIEngineer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<BlogPosts />} />
             <Route path="/codelabs" element={<Codelabs />} />
+             <Route path="/ai" element={<AIEngineer />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
