@@ -97,7 +97,7 @@ const Contact = () => {
             Get notified when I publish new blog posts, codelabs, and developer resources.
           </p>
           <Button variant="hero" size="lg" asChild>
-            <a href="https://donte.hashnode.dev/newsletter" target="_blank" rel="noopener noreferrer">
+            <a href="https://tracking-zoom-meeting-participants.hashnode.dev/newsletter" target="_blank" rel="noopener noreferrer">
               Subscribe to Newsletter
             </a>
           </Button>
