@@ -9,6 +9,7 @@ import BlogPosts from "./pages/BlogPosts";
 import Codelabs from "./pages/Codelabs";
 import AIEngineer from "./pages/AIEngineer";
 import RoastMyApp from "./pages/RoastMyApp";
+import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/codelabs" element={<Codelabs />} />
              <Route path="/ai" element={<AIEngineer />} />
             <Route path="/roast" element={<RoastMyApp />} />
+            <Route path="/projects/:slug" element={<ProjectDetail />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

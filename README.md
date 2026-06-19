@@ -2,6 +2,15 @@
 
 Personal portfolio site for a developer advocate — homepage, blog post index, codelab catalog, hidden AI Projects page, and an interactive "Roast My App" page where developers can review sample apps and submit structured feedback.
 
+### Live Site
+
+**[xcaas.dev](https://www.xcaas.dev/)**
+
+The name is a nod to **XCaaS (eXperience Communications as a Service)** — a cloud-based communication model that merges Unified Communications as a Service (UCaaS) and Contact Center as a Service (CCaaS) into a single platform, so employees and customer service teams can collaborate over voice, video, and chat on one centralized network.
+
+That's the space I work in as a developer advocate: helping developers build richer voice, video, and chat experiences across the Zoom Workplace ecosystem. Head over to [xcaas.dev](https://www.xcaas.dev/) to learn more about me, read the blog, try the codelabs, or roast one of my sample apps.
+
+
 ## Stack
 
 - **Vite** + **React 18** + **TypeScript**
@@ -69,18 +78,31 @@ Edit `src/lib/content/ai-engineer/ai-engineer.ts`. Shown at `/ai`, which is curr
 
 ### Add or edit a "Roast My App" sample
 
-Edit `src/lib/content/roast/roast.ts`. Each entry:
+Edit `src/lib/content/roast/roast.ts`. Each entry powers both the gallery card at `/roast` and a dedicated detail page at `/projects/<slug>`:
 
 ```ts
 {
-  slug: "unique-slug",
+  slug: "unique-slug",                                  // Becomes the /projects/<slug> URL
   title: "Sample App Title",
-  description: "What developers should focus on when reviewing.",
+  summary: "One-paragraph pitch — shown on card and detail hero.",
+  whyBuilt: "Why this sample exists.",                  // Optional, detail page only
+  problem: "The pain point this addresses.",            // Optional, detail page only
+  workflow: [                                           // Optional — renders as numbered steps
+    { title: "Observe",   description: "..." },
+    { title: "Recommend", description: "..." },
+    { title: "Approve",   description: "..." },
+    { title: "Execute",   description: "..." },
+  ],
   video: { provider: "loom", id: "ab064e9f74d8..." },   // Optional. provider: "youtube" | "loom"
-  repo: "owner/repo-name",                              // Used for both the GitHub link and pre-filled issues
+  repo: "owner/repo-name",                              // Used for the GitHub link AND pre-filled issues
   liveUrl: "https://...",                               // Optional — omit to hide the "Try it" button
   tech: ["Next.js", "TypeScript"],
+  zoomProducts: ["Zoom Workplace", "Team Chat"],        // Optional, detail page only
   difficulty: "Beginner",                               // Optional
+  feedbackPrompts: [                                    // Optional — shown above the roast CTA on the detail page
+    "What confused you in the setup?",
+    "Would you trust this in production?",
+  ],
 }
 ```
 
@@ -89,7 +111,7 @@ For the `video.id`, grab the ID from the share URL:
 - YouTube `https://youtu.be/<ID>` or `https://www.youtube.com/watch?v=<ID>`
 - Loom `https://www.loom.com/share/<ID>`
 
-Omit `video` entirely to hide the "Watch walkthrough" button.
+Omit `video` entirely to hide the walkthrough sections. Omit any of the optional fields to hide that section on the detail page.
 
 Feedback submissions open a pre-filled GitHub issue on the listed `repo`. For tagging to work, add a `feedback` label to each sample-app repo on GitHub (issues will still submit fine without it).
 
