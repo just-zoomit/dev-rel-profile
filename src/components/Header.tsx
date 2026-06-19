@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, FileText, Code2,  Bot } from "lucide-react";
+import { Home, FileText, Code2,  Bot, Flame } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
@@ -11,7 +11,8 @@ const Header = () => {
     { path: "/", label: "Home", icon: Home },
     { path: "/blog", label: "Blog Posts", icon: FileText },
     { path: "/codelabs", label: "Codelabs", icon: Code2 },
-    // { path: "/ai", label: "Projects", icon:  Bot }
+    // { path: "/ai", label: "Projects", icon:  Bot },
+    { path: "/roast", label: "Roast My App", icon: Flame }
   ];
 
   return (
