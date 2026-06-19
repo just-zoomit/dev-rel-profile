@@ -1,4 +1,4 @@
-export type VideoProvider = "youtube" | "loom";
+export type VideoProvider = "youtube" | "loom" | "zoomClips";
 
 export interface RoastVideo {
   provider: VideoProvider;
@@ -34,6 +34,8 @@ export const videoEmbedUrl = (v: RoastVideo): string => {
       return `https://www.youtube.com/embed/${v.id}`;
     case "loom":
       return `https://www.loom.com/embed/${v.id}`;
+    case "zoomClips":
+      return `https://success.zoom.us/clips/embed/${v.id}`;
   }
 };
 
@@ -87,6 +89,79 @@ export const roastApps: RoastApp[] = [
       "How clear is the agent loop code — anything you'd refactor?",
       "What's missing from the docs or setup steps?",
       "Would you trust this in your own Zoom Workplace environment?",
+    ],
+  },
+  {
+    slug: "zoom-team-chat-ai-agent-python",
+    title: "Zoom Team Chat AI Agent (Python)",
+    summary:
+      "A Zoom Team Chat bot that uses LangChain and OpenAI to answer questions about your company through a RAG (Retrieval-Augmented Generation) pipeline — ask in chat, get grounded answers pulled from your own docs.",
+    whyBuilt:
+      "RAG is the most practical pattern teams reach for when they want LLM answers grounded in private knowledge. This sample wires the pieces together — embedding, retrieval, prompt augmentation, and generation — behind a familiar Team Chat surface, so developers can see exactly where Zoom fits in a real AI workflow.",
+    workflow: [
+      {
+        title: "Index",
+        description: "Embed your company docs into a vector store.",
+      },
+      {
+        title: "Ask",
+        description: "A teammate asks a question in Team Chat.",
+      },
+      {
+        title: "Retrieve",
+        description: "Pull the most relevant chunks from the vector store.",
+      },
+      {
+        title: "Answer",
+        description:
+          "LangChain + OpenAI generate a grounded reply, posted back in chat.",
+      },
+    ],
+    video: { provider: "zoomClips", id: "2SmODzkZTRSl7H9fq9wDyA" },
+    repo: "zoom/chatbot-python-sample",
+    tech: ["Python", "LangChain", "OpenAI", "RAG"],
+    zoomProducts: ["Team Chat", "Marketplace Bot"],
+    difficulty: "Intermediate",
+    feedbackPrompts: [
+      "How would you handle prompt injection from chat input?",
+      "Is the chunking / retrieval strategy a sensible default?",
+      "Where would you add eval or guardrails before this hits production?",
+      "What's missing from the setup docs for someone bringing their own corpus?",
+    ],
+  },
+  {
+    slug: "zoom-team-chat-service-bot-nodejs",
+    title: "Zoom Team Chat Service Bot (Node.js)",
+    summary:
+      "A Node.js sample that brings Zoom's Communicate → Observe → Take Action loop to life: a Team Chat bot that listens to chat activity, observes meeting and app events, and takes action through tasks, docs, and workflows.",
+    whyBuilt:
+      "Zoom's platform follows a simple pattern. People communicate through Team Chat, meetings, and apps. Developers observe that activity through APIs, RTMS, and events. And they take action through tasks, docs, workflows, and integrations. This sample is the smallest end-to-end demo of that loop.",
+    workflow: [
+      {
+        title: "Communicate",
+        description: "People work through Team Chat, meetings, and apps.",
+      },
+      {
+        title: "Observe",
+        description:
+          "Developers see that activity via APIs, RTMS, and events.",
+      },
+      {
+        title: "Take Action",
+        description:
+          "Trigger tasks, docs, workflows, and integrations from the bot.",
+      },
+    ],
+    video: { provider: "zoomClips", id: "S643Phm2So2aJ-4cRj5Lvw" },
+    repo: "zoom/chatbot-services-nodejs-sample",
+    tech: ["Node.js", "Express", "TypeScript"],
+    zoomProducts: ["Team Chat", "Marketplace Bot", "RTMS"],
+    difficulty: "Beginner",
+    feedbackPrompts: [
+      "Is the event handling code obvious enough for a developer new to Zoom bots?",
+      "Where would you add retry or error recovery for the action step?",
+      "What docs would have unblocked you fastest?",
+      "Does the bot registration flow feel approachable?",
     ],
   },
 ];

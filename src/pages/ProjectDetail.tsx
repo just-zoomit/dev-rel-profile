@@ -14,11 +14,17 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import {
   ArrowLeft,
   CheckCircle2,
+  Database,
   ExternalLink,
   Eye,
   Flame,
   Github,
+  HelpCircle,
   Lightbulb,
+  type LucideIcon,
+  MessageSquare,
+  Search,
+  Sparkles,
   Zap,
 } from "lucide-react";
 
@@ -30,7 +36,24 @@ import {
 } from "@/lib/content/roast/roast";
 import RoastFeedbackForm from "@/components/RoastFeedbackForm";
 
-const workflowIcons = [Eye, Lightbulb, CheckCircle2, Zap];
+const iconByTitle: Record<string, LucideIcon> = {
+  observe: Eye,
+  recommend: Lightbulb,
+  approve: CheckCircle2,
+  execute: Zap,
+  communicate: MessageSquare,
+  "take action": Zap,
+  index: Database,
+  ask: HelpCircle,
+  retrieve: Search,
+  answer: Sparkles,
+};
+
+const positionalFallback: LucideIcon[] = [Eye, Lightbulb, CheckCircle2, Zap];
+
+const iconFor = (step: WorkflowStep, index: number): LucideIcon =>
+  iconByTitle[step.title.toLowerCase()] ??
+  positionalFallback[index % positionalFallback.length];
 
 const WorkflowStepCard = ({
   step,
@@ -39,7 +62,7 @@ const WorkflowStepCard = ({
   step: WorkflowStep;
   index: number;
 }) => {
-  const Icon = workflowIcons[index % workflowIcons.length];
+  const Icon = iconFor(step, index);
   return (
     <Card className="shadow-card border-none h-full">
       <CardContent className="p-6 flex flex-col gap-3">
@@ -159,7 +182,11 @@ const ProjectDetail = () => {
         {app.workflow && app.workflow.length > 0 && (
           <section className="mb-12">
             <SectionHeading>How it works</SectionHeading>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div
+              className={`grid gap-4 sm:grid-cols-2 ${
+                app.workflow.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"
+              }`}
+            >
               {app.workflow.map((step, i) => (
                 <WorkflowStepCard key={step.title} step={step} index={i} />
               ))}

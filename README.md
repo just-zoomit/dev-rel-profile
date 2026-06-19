@@ -93,7 +93,7 @@ Edit `src/lib/content/roast/roast.ts`. Each entry powers both the gallery card a
     { title: "Approve",   description: "..." },
     { title: "Execute",   description: "..." },
   ],
-  video: { provider: "loom", id: "ab064e9f74d8..." },   // Optional. provider: "youtube" | "loom"
+  video: { provider: "loom", id: "ab064e9f74d8..." },   // Optional. provider: "youtube" | "loom" | "zoomClips"
   repo: "owner/repo-name",                              // Used for the GitHub link AND pre-filled issues
   liveUrl: "https://...",                               // Optional — omit to hide the "Try it" button
   tech: ["Next.js", "TypeScript"],
@@ -110,6 +110,7 @@ For the `video.id`, grab the ID from the share URL:
 
 - YouTube `https://youtu.be/<ID>` or `https://www.youtube.com/watch?v=<ID>`
 - Loom `https://www.loom.com/share/<ID>`
+- Zoom Clips `https://success.zoom.us/clips/share/<ID>`
 
 Omit `video` entirely to hide the walkthrough sections. Omit any of the optional fields to hide that section on the detail page.
 
