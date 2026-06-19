@@ -131,7 +131,7 @@ export const roastApps: RoastApp[] = [
   },
   {
     slug: "zoom-team-chat-service-bot-nodejs",
-    title: "Zoom Team Chat Service Bot (Node.js)",
+    title: "Zoom Chat Service Bot (Node.js)",
     summary:
       "A Node.js sample that brings Zoom's Communicate → Observe → Take Action loop to life: a Team Chat bot that listens to chat activity, observes meeting and app events, and takes action through tasks, docs, and workflows.",
     whyBuilt:
