@@ -76,13 +76,20 @@ Edit `src/lib/content/roast/roast.ts`. Each entry:
   slug: "unique-slug",
   title: "Sample App Title",
   description: "What developers should focus on when reviewing.",
-  videoId: "abc123",                  // YouTube video ID (leave "" to hide the watch button)
-  repo: "owner/repo-name",            // Used for both the GitHub link and pre-filled issues
-  liveUrl: "https://...",             // Optional — omit or leave "" to hide the "Try it" button
+  video: { provider: "loom", id: "ab064e9f74d8..." },   // Optional. provider: "youtube" | "loom"
+  repo: "owner/repo-name",                              // Used for both the GitHub link and pre-filled issues
+  liveUrl: "https://...",                               // Optional — omit to hide the "Try it" button
   tech: ["Next.js", "TypeScript"],
-  difficulty: "Beginner",             // Optional
+  difficulty: "Beginner",                               // Optional
 }
 ```
+
+For the `video.id`, grab the ID from the share URL:
+
+- YouTube `https://youtu.be/<ID>` or `https://www.youtube.com/watch?v=<ID>`
+- Loom `https://www.loom.com/share/<ID>`
+
+Omit `video` entirely to hide the "Watch walkthrough" button.
 
 Feedback submissions open a pre-filled GitHub issue on the listed `repo`. For tagging to work, add a `feedback` label to each sample-app repo on GitHub (issues will still submit fine without it).
 

@@ -12,7 +12,7 @@ import {
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ExternalLink, Flame, Github, Play } from "lucide-react";
 
-import { roastApps, RoastApp } from "@/lib/content/roast/roast";
+import { roastApps, RoastApp, videoEmbedUrl } from "@/lib/content/roast/roast";
 import RoastFeedbackForm from "@/components/RoastFeedbackForm";
 
 const difficultyColor = (difficulty?: string) => {
@@ -74,7 +74,7 @@ const RoastMyApp = () => {
                   ))}
                 </div>
 
-                {app.videoId && (
+                {app.video && (
                   <Button
                     variant="outline"
                     className="w-full"
@@ -134,11 +134,11 @@ const RoastMyApp = () => {
             <DialogTitle>{videoApp?.title}</DialogTitle>
             <DialogDescription>Walkthrough video</DialogDescription>
           </DialogHeader>
-          {videoApp && (
+          {videoApp?.video && (
             <AspectRatio ratio={16 / 9}>
               <iframe
                 className="w-full h-full rounded-md"
-                src={`https://www.youtube.com/embed/${videoApp.videoId}`}
+                src={videoEmbedUrl(videoApp.video)}
                 title={`${videoApp.title} walkthrough`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
