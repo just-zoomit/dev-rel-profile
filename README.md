@@ -93,6 +93,10 @@ Edit `src/lib/content/roast/roast.ts`. Each entry powers both the gallery card a
     { title: "Approve",   description: "..." },
     { title: "Execute",   description: "..." },
   ],
+  diagram: {                                            // Optional — renders an Architecture section with click-to-zoom
+    src: importedImage,                                 // Import a PNG/SVG from src/assets at the top of roast.ts
+    alt: "Description of the diagram for screen readers.",
+  },
   video: { provider: "loom", id: "ab064e9f74d8..." },   // Optional. provider: "youtube" | "loom" | "zoomClips"
   repo: "owner/repo-name",                              // Used for the GitHub link AND pre-filled issues
   liveUrl: "https://...",                               // Optional — omit to hide the "Try it" button

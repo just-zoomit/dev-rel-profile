@@ -1,3 +1,5 @@
+import aiPoweredWorkplaceDiagram from "@/assets/AIpowered-workplace.png";
+
 export type VideoProvider = "youtube" | "loom" | "zoomClips";
 
 export interface RoastVideo {
@@ -12,6 +14,11 @@ export interface WorkflowStep {
 
 export type Difficulty = "Beginner" | "Intermediate" | "Advanced";
 
+export interface RoastDiagram {
+  src: string;
+  alt: string;
+}
+
 export interface RoastApp {
   slug: string;
   title: string;
@@ -19,6 +26,7 @@ export interface RoastApp {
   whyBuilt?: string;
   problem?: string;
   workflow?: WorkflowStep[];
+  diagram?: RoastDiagram;
   video?: RoastVideo;
   repo: string;
   liveUrl?: string;
@@ -78,6 +86,10 @@ export const roastApps: RoastApp[] = [
         description: "Execute the approved action back into the flow of work.",
       },
     ],
+    diagram: {
+      src: aiPoweredWorkplaceDiagram,
+      alt: "Architecture diagram for the AI Powered Meeting Follow-Up Agent for Zoom Workplace: Observe, Recommend, Approve, Execute pipeline with Zoom Workplace sources, AI agent workflow, human review, and execution layer.",
+    },
     video: { provider: "loom", id: "ab064e9f74d84050aee47c9188991fe7" },
     repo: "zoom/human-in-the-loop-workplace-agent-sample",
     tech: ["TypeScript", "AI Agents", "Node.js"],

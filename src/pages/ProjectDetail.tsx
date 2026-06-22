@@ -22,6 +22,7 @@ import {
   HelpCircle,
   Lightbulb,
   type LucideIcon,
+  Maximize2,
   MessageSquare,
   Search,
   Sparkles,
@@ -91,6 +92,7 @@ const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const app = getRoastAppBySlug(slug);
   const [roastOpen, setRoastOpen] = useState(false);
+  const [diagramOpen, setDiagramOpen] = useState(false);
 
   if (!app) {
     return (
@@ -194,6 +196,29 @@ const ProjectDetail = () => {
           </section>
         )}
 
+        {app.diagram && (
+          <section className="mb-12">
+            <SectionHeading>Architecture</SectionHeading>
+            <button
+              type="button"
+              onClick={() => setDiagramOpen(true)}
+              className="group block w-full rounded-lg overflow-hidden shadow-card bg-card border hover:shadow-lg transition-shadow relative"
+              aria-label="View full-size diagram"
+            >
+              <img
+                src={app.diagram.src}
+                alt={app.diagram.alt}
+                className="w-full h-auto"
+                loading="lazy"
+              />
+              <span className="absolute top-3 right-3 bg-background/80 backdrop-blur rounded-md px-2 py-1 text-xs flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <Maximize2 className="h-3 w-3" />
+                Click to expand
+              </span>
+            </button>
+          </section>
+        )}
+
         {app.video && (
           <section className="mb-12">
             <SectionHeading>Walkthrough</SectionHeading>
@@ -269,6 +294,24 @@ const ProjectDetail = () => {
           </Button>
         </section>
       </div>
+
+      {app.diagram && (
+        <Dialog open={diagramOpen} onOpenChange={setDiagramOpen}>
+          <DialogContent className="max-w-[95vw] max-h-[95vh] overflow-auto p-2 sm:p-4">
+            <DialogHeader>
+              <DialogTitle>Architecture diagram</DialogTitle>
+              <DialogDescription className="sr-only">
+                Full-size view of the {app.title} architecture diagram.
+              </DialogDescription>
+            </DialogHeader>
+            <img
+              src={app.diagram.src}
+              alt={app.diagram.alt}
+              className="w-full h-auto rounded-md"
+            />
+          </DialogContent>
+        </Dialog>
+      )}
 
       <Dialog open={roastOpen} onOpenChange={setRoastOpen}>
         <DialogContent className="max-w-xl max-h-[90vh] overflow-y-auto">
