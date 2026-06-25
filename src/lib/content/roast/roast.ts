@@ -28,6 +28,7 @@ export interface RoastApp {
   workflow?: WorkflowStep[];
   diagram?: RoastDiagram;
   video?: RoastVideo;
+  youtubeUrl?: string;
   repo: string;
   liveUrl?: string;
   tech: string[];
@@ -91,6 +92,7 @@ export const roastApps: RoastApp[] = [
       alt: "Architecture diagram for the AI Powered Meeting Follow-Up Agent for Zoom Workplace: Observe, Recommend, Approve, Execute pipeline with Zoom Workplace sources, AI agent workflow, human review, and execution layer.",
     },
     video: { provider: "loom", id: "ab064e9f74d84050aee47c9188991fe7" },
+    youtubeUrl: "https://youtu.be/HF1bQyDS60A",
     repo: "zoom/human-in-the-loop-workplace-agent-sample",
     tech: ["TypeScript", "AI Agents", "Node.js"],
     zoomProducts: ["Zoom Workplace", "Team Chat", "Meeting SDK"],
@@ -145,7 +147,7 @@ export const roastApps: RoastApp[] = [
     slug: "zoom-team-chat-service-bot-nodejs",
     title: "Zoom Chat Service Bot (Node.js)",
     summary:
-      "A Node.js sample that brings Zoom's Communicate → Observe → Take Action loop to life: a Team Chat bot that listens to chat activity, observes meeting and app events, and takes action through tasks, docs, and workflows.",
+      "A Node.js sample that brings Zoom's Communicate → Observe → Take Action loop to life: a Team Chat bot that listens to chat activity, observes app events, and lets users surface the Zoom app dashboard to take action in the flow of work.",
     whyBuilt:
       "Zoom's platform follows a simple pattern. People communicate through Team Chat, meetings, and apps. Developers observe that activity through APIs, RTMS, and events. And they take action through tasks, docs, workflows, and integrations. This sample is the smallest end-to-end demo of that loop.",
     workflow: [
@@ -165,8 +167,9 @@ export const roastApps: RoastApp[] = [
       },
     ],
     video: { provider: "zoomClips", id: "S643Phm2So2aJ-4cRj5Lvw" },
+    youtubeUrl: "https://youtu.be/HF1bQyDS60A",
     repo: "zoom/chatbot-services-nodejs-sample",
-    tech: ["Node.js", "Express", "TypeScript"],
+    tech: ["Node.js", "Express", "HTML"],
     zoomProducts: ["Team Chat", "Marketplace Bot", "RTMS"],
     difficulty: "Beginner",
     feedbackPrompts: [

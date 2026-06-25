@@ -26,6 +26,7 @@ import {
   MessageSquare,
   Search,
   Sparkles,
+  Youtube,
   Zap,
 } from "lucide-react";
 
@@ -148,6 +149,18 @@ const ProjectDetail = () => {
                 View on GitHub
               </a>
             </Button>
+            {app.youtubeUrl && (
+              <Button variant="outline" asChild>
+                <a
+                  href={app.youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Youtube className="mr-2 h-4 w-4" />
+                  Watch on YouTube
+                </a>
+              </Button>
+            )}
             {app.liveUrl && (
               <Button variant="outline" asChild>
                 <a href={app.liveUrl} target="_blank" rel="noopener noreferrer">

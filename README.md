@@ -98,6 +98,7 @@ Edit `src/lib/content/roast/roast.ts`. Each entry powers both the gallery card a
     alt: "Description of the diagram for screen readers.",
   },
   video: { provider: "loom", id: "ab064e9f74d8..." },   // Optional. provider: "youtube" | "loom" | "zoomClips"
+  youtubeUrl: "https://youtu.be/...",                   // Optional — adds a YouTube icon/button (e.g. a conference talk recording)
   repo: "owner/repo-name",                              // Used for the GitHub link AND pre-filled issues
   liveUrl: "https://...",                               // Optional — omit to hide the "Try it" button
   tech: ["Next.js", "TypeScript"],

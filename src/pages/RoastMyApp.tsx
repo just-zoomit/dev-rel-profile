@@ -16,7 +16,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { ArrowRight, ExternalLink, Flame, Github, Play } from "lucide-react";
+import { ArrowRight, ExternalLink, Flame, Github, Play, Youtube } from "lucide-react";
 
 import {
   difficultyColor,
@@ -91,6 +91,23 @@ const RoastMyApp = () => {
                         onClick={() => setVideoApp(app)}
                       >
                         <Play className="h-4 w-4" />
+                      </Button>
+                    )}
+                    {app.youtubeUrl && (
+                      <Button
+                        variant="outline"
+                        size="icon"
+                        aria-label="Watch the talk on YouTube"
+                        title="Watch the talk on YouTube"
+                        asChild
+                      >
+                        <a
+                          href={app.youtubeUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Youtube className="h-4 w-4" />
+                        </a>
                       </Button>
                     )}
                     <Button
