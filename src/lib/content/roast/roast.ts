@@ -29,6 +29,7 @@ export interface RoastApp {
   diagram?: RoastDiagram;
   video?: RoastVideo;
   youtubeUrl?: string;
+  slidesUrl?: string;
   repo: string;
   liveUrl?: string;
   tech: string[];
@@ -93,6 +94,8 @@ export const roastApps: RoastApp[] = [
     },
     video: { provider: "loom", id: "ab064e9f74d84050aee47c9188991fe7" },
     youtubeUrl: "https://youtu.be/HF1bQyDS60A",
+    slidesUrl:
+      "https://docs.google.com/presentation/d/1zE3FqjAQ-EF4g1QWVJxpd0iT6erkwem6fky3Hqh23xU/edit?usp=sharing",
     repo: "zoom/human-in-the-loop-workplace-agent-sample",
     tech: ["TypeScript", "AI Agents", "Node.js"],
     zoomProducts: ["Zoom Workplace", "Team Chat", "Meeting SDK"],
@@ -168,6 +171,8 @@ export const roastApps: RoastApp[] = [
     ],
     video: { provider: "zoomClips", id: "S643Phm2So2aJ-4cRj5Lvw" },
     youtubeUrl: "https://youtu.be/HF1bQyDS60A",
+    slidesUrl:
+      "https://docs.google.com/presentation/d/1zE3FqjAQ-EF4g1QWVJxpd0iT6erkwem6fky3Hqh23xU/edit?usp=sharing",
     repo: "zoom/chatbot-services-nodejs-sample",
     tech: ["Node.js", "Express", "HTML"],
     zoomProducts: ["Team Chat", "Marketplace Bot", "RTMS"],

@@ -24,6 +24,7 @@ import {
   type LucideIcon,
   Maximize2,
   MessageSquare,
+  Presentation,
   Search,
   Sparkles,
   Youtube,
@@ -158,6 +159,18 @@ const ProjectDetail = () => {
                 >
                   <Youtube className="mr-2 h-4 w-4" />
                   Watch on YouTube
+                </a>
+              </Button>
+            )}
+            {app.slidesUrl && (
+              <Button variant="outline" asChild>
+                <a
+                  href={app.slidesUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Presentation className="mr-2 h-4 w-4" />
+                  View slides
                 </a>
               </Button>
             )}

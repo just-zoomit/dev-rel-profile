@@ -99,6 +99,7 @@ Edit `src/lib/content/roast/roast.ts`. Each entry powers both the gallery card a
   },
   video: { provider: "loom", id: "ab064e9f74d8..." },   // Optional. provider: "youtube" | "loom" | "zoomClips"
   youtubeUrl: "https://youtu.be/...",                   // Optional — adds a YouTube icon/button (e.g. a conference talk recording)
+  slidesUrl: "https://docs.google.com/presentation/...", // Optional — adds a Slides icon/button (e.g. Google Slides deck)
   repo: "owner/repo-name",                              // Used for the GitHub link AND pre-filled issues
   liveUrl: "https://...",                               // Optional — omit to hide the "Try it" button
   tech: ["Next.js", "TypeScript"],

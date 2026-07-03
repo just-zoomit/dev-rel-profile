@@ -16,7 +16,15 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { ArrowRight, ExternalLink, Flame, Github, Play, Youtube } from "lucide-react";
+import {
+  ArrowRight,
+  ExternalLink,
+  Flame,
+  Github,
+  Play,
+  Presentation,
+  Youtube,
+} from "lucide-react";
 
 import {
   difficultyColor,
@@ -107,6 +115,23 @@ const RoastMyApp = () => {
                           rel="noopener noreferrer"
                         >
                           <Youtube className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
+                    {app.slidesUrl && (
+                      <Button
+                        variant="outline"
+                        size="icon"
+                        aria-label="View slides"
+                        title="View slides"
+                        asChild
+                      >
+                        <a
+                          href={app.slidesUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Presentation className="h-4 w-4" />
                         </a>
                       </Button>
                     )}
