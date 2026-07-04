@@ -150,7 +150,7 @@ export const roastApps: RoastApp[] = [
   },
   {
     slug: "zoom-team-chat-service-bot-nodejs",
-    title: "Zoom Chat Service Bot (Node.js)",
+    title: "Zoom Chat Service Bot",
     summary:
       "A Node.js sample that brings Zoom's Communicate → Observe → Take Action loop to life: a Team Chat bot that listens to chat activity, observes app events, and lets users surface the Zoom app dashboard to take action in the flow of work.",
     whyBuilt:
@@ -245,7 +245,7 @@ export const roastApps: RoastApp[] = [
   },
   {
     slug: "learning-workplace-agent",
-    title: "Learning Workplace Agent (Node.js)",
+    title: "Learning Workplace Agent",
     summary:
       "A Zoom Workplace sample that turns live meeting conversations into approved, actionable artifacts — Tasks, Docs, Reminders, and Escalations — and gets better every time by learning from reviewer edits and rejections.",
     whyBuilt:
