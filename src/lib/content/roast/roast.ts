@@ -1,4 +1,5 @@
 import aiPoweredWorkplaceDiagram from "@/assets/AIpowered-workplace.png";
+import meetingMomentDiagram from "@/assets/Meeting-Moment.png";
 
 export type VideoProvider = "youtube" | "loom" | "zoomClips";
 
@@ -182,6 +183,63 @@ export const roastApps: RoastApp[] = [
       "Where would you add retry or error recovery for the action step?",
       "What docs would have unblocked you fastest?",
       "Does the bot registration flow feel approachable?",
+    ],
+  },
+  {
+    slug: "meeting-moment-assistant",
+    title: "Meeting-Moment Assistant",
+    summary:
+      "A Zoom Workplace sample app that finds the exact moment in a meeting where a topic was discussed, verifies the answer against source evidence, and lets a human approve a meaningful next action — Share to Chat or Create Task.",
+    whyBuilt:
+      "AI answers about meetings are only useful when they're grounded and safe to act on. This sample separates retrieval, grounding, and execution into three explicit stages with a human-approval gate before anything mutates state — so developers can see how Claude, the Anthropic MCP connector, and Zoom's Workplace, Chat, and Tasks MCP servers fit together in a Find → Verify → Act flow.",
+    workflow: [
+      {
+        title: "Find",
+        description:
+          "Claude retrieves meeting evidence via the Zoom Workplace and Chat MCP servers.",
+      },
+      {
+        title: "Verify",
+        description:
+          "The server rejects any answer missing a meeting, speaker, timestamps, or verbatim excerpt.",
+      },
+      {
+        title: "Approve",
+        description:
+          "The user reviews the exact payload and approves Share to Chat or Create Task.",
+      },
+      {
+        title: "Act",
+        description:
+          "Approved actions execute via the Team Chat bot or a scoped Zoom Tasks MCP call.",
+      },
+    ],
+    diagram: {
+      src: meetingMomentDiagram,
+      alt: "Architecture diagram for the Meeting-Moment Assistant: Claude SDK orchestrates Zoom Workplace and Chat MCP retrieval, grounding gate enforces source evidence, and a human-approval step gates Share to Chat and Create Task execution.",
+    },
+    repo: "zoom/zoom-meeting-moment-sample",
+    tech: [
+      "TypeScript",
+      "Next.js",
+      "Express",
+      "Claude SDK",
+      "Anthropic MCP",
+    ],
+    zoomProducts: [
+      "Zoom Workplace MCP",
+      "Zoom Chat MCP",
+      "Zoom Tasks MCP",
+      "Team Chat",
+      "Zoom Apps SDK",
+    ],
+    difficulty: "Advanced",
+    feedbackPrompts: [
+      "Does the Prepare → Approve → Execute split feel like a safe pattern for agentic apps?",
+      "Is the grounding gate strict enough — would you tighten or relax it?",
+      "Where would you enforce hard scoping on retrieval instead of prompting for it?",
+      "How clear is the MCP-per-stage attachment strategy in the code?",
+      "What's missing from the setup docs for someone bringing their own Zoom account?",
     ],
   },
 ];
