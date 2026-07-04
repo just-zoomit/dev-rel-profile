@@ -1,5 +1,6 @@
 import aiPoweredWorkplaceDiagram from "@/assets/AIpowered-workplace.png";
 import meetingMomentDiagram from "@/assets/Meeting-Moment.png";
+import learningWorkplaceAgentDiagram from "@/assets/learning-workplace-agent.png";
 
 export type VideoProvider = "youtube" | "loom" | "zoomClips";
 
@@ -240,6 +241,76 @@ export const roastApps: RoastApp[] = [
       "Where would you enforce hard scoping on retrieval instead of prompting for it?",
       "How clear is the MCP-per-stage attachment strategy in the code?",
       "What's missing from the setup docs for someone bringing their own Zoom account?",
+    ],
+  },
+  {
+    slug: "learning-workplace-agent",
+    title: "Learning Workplace Agent (Node.js)",
+    summary:
+      "A Zoom Workplace sample that turns live meeting conversations into approved, actionable artifacts — Tasks, Docs, Reminders, and Escalations — and gets better every time by learning from reviewer edits and rejections.",
+    whyBuilt:
+      "Most agentic demos stop at 'the AI suggested something'. This sample closes the loop: every state change is human-approved, every edit and rejection is logged, and derived preferences are injected back into the next extraction so the model steadily aligns with how your team actually works. It's built on Zoom Continuous Meeting Chat so meeting context stays accessible before, during, and after the call.",
+    workflow: [
+      {
+        title: "Observe",
+        description:
+          "RTMS transcript segments and Team Chat context stream in as they happen.",
+      },
+      {
+        title: "Understand",
+        description:
+          "OpenAI structured outputs extract candidate signals — tasks, decisions, blockers, risks, summaries.",
+      },
+      {
+        title: "Decide",
+        description:
+          "Each signal is classified as Task, Doc, Reminder, Escalation, or None with reasoning and confidence.",
+      },
+      {
+        title: "Approve",
+        description:
+          "The reviewer approves, edits, reclassifies, or rejects — nothing executes until a human clicks Approve.",
+      },
+      {
+        title: "Act",
+        description:
+          "Approved actions execute on the right surface: Zoom Tasks API, Zoom MCP for Docs, or Team Chat cards.",
+      },
+      {
+        title: "Learn",
+        description:
+          "Edits and rejections derive preferences that are injected into the next extraction prompt.",
+      },
+    ],
+    diagram: {
+      src: learningWorkplaceAgentDiagram,
+      alt: "Architecture diagram for the Learning Workplace Agent: a six-stage Observe → Understand → Decide → Approve → Act → Learn loop across Zoom Workplace sources, OpenAI signal extraction, human review, execution on Zoom Tasks / Docs / Team Chat, and a server-side preference store that feeds back into the next extraction.",
+    },
+    repo: "zoom/zoom-learning-workplace-agent",
+    tech: [
+      "Node.js",
+      "Next.js",
+      "Express",
+      "OpenAI SDK",
+      "Anthropic Claude",
+      "Zoom RTMS",
+      "Zoom MCP",
+    ],
+    zoomProducts: [
+      "Zoom RTMS",
+      "Zoom Apps SDK",
+      "Team Chat",
+      "Zoom Tasks API",
+      "Zoom MCP",
+      "Continuous Meeting Chat",
+    ],
+    difficulty: "Advanced",
+    feedbackPrompts: [
+      "Do the three preference-derivation rules (flip rate, reject rate, owner accept rate) feel like the right signals to learn from?",
+      "Is reclassification at approval time the right UX, or should the model be forced to re-score first?",
+      "Where would you add evals to catch preference drift over time?",
+      "Does routing to Task / Doc / Reminder / Escalation feel like the right taxonomy for your team?",
+      "How would you persist the activity log and preference store for production?",
     ],
   },
 ];
