@@ -112,7 +112,7 @@ export const roastApps: RoastApp[] = [
   },
   {
     slug: "zoom-team-chat-ai-agent-python",
-    title: "Zoom Team Chat AI Agent (Python)",
+    title: "Zoom Team Chat AI Agent",
     summary:
       "A Zoom Team Chat bot that uses LangChain and OpenAI to answer questions about your company through a RAG (Retrieval-Augmented Generation) pipeline — ask in chat, get grounded answers pulled from your own docs.",
     whyBuilt:
