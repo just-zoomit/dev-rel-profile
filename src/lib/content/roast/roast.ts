@@ -1,6 +1,7 @@
 import aiPoweredWorkplaceDiagram from "@/assets/AIpowered-workplace.png";
 import meetingMomentDiagram from "@/assets/Meeting-Moment.png";
 import learningWorkplaceAgentDiagram from "@/assets/learning-workplace-agent.png";
+import aiChatbotDiagram from "@/assets/ai-chatbot.png";
 
 export type VideoProvider = "youtube" | "loom" | "zoomClips";
 
@@ -171,6 +172,10 @@ export const roastApps: RoastApp[] = [
           "Trigger tasks, docs, workflows, and integrations from the bot.",
       },
     ],
+    diagram: {
+      src: aiChatbotDiagram,
+      alt: "Architecture diagram for the Zoom Chat Service Bot: Communicate → Observe → Take Action loop across Team Chat, APIs/RTMS/events, and Zoom Workplace integrations.",
+    },
     video: { provider: "zoomClips", id: "S643Phm2So2aJ-4cRj5Lvw" },
     youtubeUrl: "https://youtu.be/HF1bQyDS60A",
     slidesUrl:
